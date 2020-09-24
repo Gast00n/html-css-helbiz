@@ -23,6 +23,18 @@ body {
   clear: both;
 }
 
+.container-small {
+  width:1024px;
+  max-width: 100%;
+  margin: 5px auto;
+}
+
+.container-small::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /* Colonne */
 
 [class*='col-'].pad-0 {

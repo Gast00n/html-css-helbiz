@@ -23,7 +23,7 @@ a.link-white {
 }
 
 .container-small {
-  width:1190px;
+  width:1200px;
 }
 
 .only-desktop {
@@ -39,6 +39,40 @@ a.link-white {
 }
 
 /* HEADER */
+
+header .container-small {
+  text-align: center;
+  line-height: 70px;
+}
+
+header img {
+  vertical-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li:not(.language) {
+  margin-right: 30px;
+}
+
+nav ul li.language:not(:last-child) a {
+  display: inline-block;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px #000 solid;
+  line-height: 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+}
+
+
+
 
 
 /* MAIN */
