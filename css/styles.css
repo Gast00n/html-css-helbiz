@@ -1,0 +1,121 @@
+body {
+  font-family: ;
+  font-size: 16px;
+  color:#000;
+  background:#fff;
+}
+
+/* Typography */
+
+a.link-white {
+  color:#fff;
+  text-decoration: none;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+/* Container specific */
+
+.container {
+  width: 1350px;
+}
+
+.container-small {
+  width:1190px;
+}
+
+.only-desktop {
+  display:none;
+}
+
+.absolute-box {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+
+/* HEADER */
+
+
+/* MAIN */
+
+/* How Works */
+
+.how-works {
+  height: 400px;
+  margin-bottom: 200px;
+  background-image: url('../img/helbiz-banner.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.how-works .col-left,
+.how-works .col-right {
+  margin-top:450px;
+}
+
+.how-works .col-left {
+  text-align: right;
+}
+
+.how-works .col-left .text {
+  display: inline-block;
+  text-align: left;
+}
+
+.how-works .col-left h3 {
+  font-size: 30px;
+}
+
+.how-works h3,
+.how-works h4 {
+  font-weight: 600;
+}
+
+.how-works .col-right .text {
+  padding-top: 10px;
+}
+
+
+/* FOOTER */
+
+
+/* MEDIA QUERY PC */
+
+@media screen and (min-width: 992px) {
+  .only-desktop {
+    display: block;
+  }
+
+  .how-works {
+    background-position: center;
+  }
+
+  .how-works .phone {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .how-works .phone img {
+    max-height: 600px;
+    max-width: 100%;
+  }
+}
+
+/* MEDIA QUERY TABLET */
+
+@media screen and (min-width: 768px) {
+
+  .how-works {
+    margin-bottom: 250px;
+  }
+
+  .how-works .col-left,
+  .how-works .col-right {
+    margin-top: 500px;
+  }
+}
