@@ -99,11 +99,42 @@ nav ul li a {
   margin-top: 20px;
 }
 
+/* Products */
+.products {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.product-box {
+  background:#fafafa;
+}
+
+.product-box h3 {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.product-box small {
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.product-box a {
+  font-size: 14px;
+  display: block;
+  color: #0007ff;
+}
+
+.product-box img {
+  width:50%;
+}
+
 /* How Works */
 
 .how-works {
   height: 400px;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
   background-image: url('../img/helbiz-banner.jpg');
   background-size: cover;
   background-position: center center;
@@ -136,6 +167,66 @@ nav ul li a {
   padding-top: 10px;
 }
 
+/* Smart Mobility */
+
+.smart-mobility {
+  margin-top: 250px;
+  height: 500px;
+  background-image: url('../img/scooter-bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+.smart-mobility .col-md-6 {
+  height: 100%;
+  position:relative;
+}
+
+.smart-mobility .absolute-box {
+  width:350px;
+  color:#fff;
+}
+
+.smart-mobility h3 {
+  font-size: 250%;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.smart-mobility small {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.smart-mobility a {
+  display: block;
+  font-size: 18px;
+  line-height: 1.25;
+  margin-top: 20px;
+}
+
+
+/* Find Us */
+
+.fu-box-left,
+.fu-box-right {
+  height: 440px;
+}
+
+/* Mosaic */
+
+.mosaic {
+  position:relative;
+  height: 400px;
+  background-image: url('../img/social-banner.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+
 
 /* FOOTER */
 
@@ -165,6 +256,13 @@ nav ul li a {
 /* MEDIA QUERY TABLET */
 
 @media screen and (min-width: 768px) {
+
+
+  /* Products */
+  .products .col-md-6 {
+    padding:25px;
+  }
+  /* How Works */
 
   .how-works {
     margin-bottom: 250px;
