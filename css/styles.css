@@ -82,7 +82,8 @@ nav ul li a {
 }
 
 .jumbotron .absolute-box {
-  width:700px;
+  width:100%;
+  padding:20px;
   color:#fff;
 }
 
@@ -259,15 +260,49 @@ nav ul li a {
 /* Mosaic */
 
 .mosaic {
+  margin: 50px 0;
   position:relative;
-  height: 400px;
+  height: 200px;
   background-image: url('../img/social-banner.jpg');
   background-size: cover;
   background-position: center center;
   text-align: center;
 }
 
+.mosaic .absolute-box {
+  width:350px;
+  padding:30px;
+  background:#fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
+.mosaic h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+ul.mosaic-social {
+  padding:0;
+}
+
+ ul.mosaic-social li {
+  list-style: none;
+  display: inline-block;
+}
+
+ ul.mosaic-social li:not(:last-child) {
+  padding-right: 25px;
+}
+
+ ul.mosaic-social li a {
+ text-decoration: none;
+ color: #000;
+ font-size: 35px;
+}
 
 /* FOOTER */
 
@@ -297,6 +332,9 @@ nav ul li a {
 /* MEDIA QUERY TABLET */
 
 @media screen and (min-width: 768px) {
+  .jumbotron .absolute-box {
+    width:700px;
+  }
 
   .absolute-box {
     position: absolute;
@@ -356,4 +394,10 @@ nav ul li a {
     transform: translateX(-50%);
   }
 
+  /* Mosaic */
+
+  .mosaic {
+    margin: 100px 0;
+    height: 400px;
+  }
 }
