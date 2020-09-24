@@ -31,10 +31,7 @@ a.link-white {
 }
 
 .absolute-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: static;
 }
 
 /* HEADER */
@@ -174,17 +171,16 @@ nav ul li a {
   height: 500px;
   background-image: url('../img/scooter-bg.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: bottom right;
   text-align: center;
 }
 
 .smart-mobility .col-md-6 {
   height: 100%;
-  position:relative;
 }
 
 .smart-mobility .absolute-box {
-  width:350px;
+  margin-top: 150px;
   color:#fff;
 }
 
@@ -210,9 +206,43 @@ nav ul li a {
 
 /* Find Us */
 
+.find-us {
+  margin-top: 25px;
+  text-align: center;
+  color: #fff;
+}
+
 .fu-box-left,
 .fu-box-right {
-  height: 440px;
+  height: 200px;
+}
+
+.fu-box-left {
+  background-color: rgb(38,48,57);
+  background: linear-gradient(0deg, rgba(38,48,57,1) 0%, rgba(65,86,106,1) 100%);
+  padding: 40px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.fu-box-left h3 {
+  font-size: 175%;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.fu-box-left small {
+  display: block;
+  line-height: 4;
+}
+
+.fu-box-left a {
+  line-height: 2;
+  margin-left: 10px;
+}
+
+.fu-box-left img {
+  display: none;
 }
 
 /* Mosaic */
@@ -257,6 +287,13 @@ nav ul li a {
 
 @media screen and (min-width: 768px) {
 
+  .absolute-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 
   /* Products */
   .products .col-md-6 {
@@ -272,4 +309,40 @@ nav ul li a {
   .how-works .col-right {
     margin-top: 500px;
   }
+
+  /* Smart Mobility */
+
+  .smart-mobility {
+    background-position: center center;
+  }
+
+  .smart-mobility .col-md-6 {
+    height: 100%;
+    position:relative;
+  }
+
+  .smart-mobility .absolute-box {
+    margin-top: 0;
+    width:350px;
+  }
+
+  /* Find Us */
+  .find-us {
+    margin-top: 25px;
+  }
+
+  .fu-box-left,
+  .fu-box-right {
+    height: 440px;
+  }
+
+  .fu-box-left img {
+    display: block;
+    width: 75%;
+    position: absolute;
+    top:200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
