@@ -225,24 +225,35 @@ nav ul li a {
   overflow-y: hidden;
 }
 
-.fu-box-left h3 {
+.fu-box-left h3,
+.fu-box-right h3 {
   font-size: 175%;
   font-weight: 600;
   line-height: 1;
 }
 
-.fu-box-left small {
+.fu-box-left small,
+.fu-box-right small {
   display: block;
   line-height: 4;
 }
 
-.fu-box-left a {
+.fu-box-left a,
+.fu-box-right a {
   line-height: 2;
   margin-left: 10px;
 }
 
 .fu-box-left img {
   display: none;
+}
+
+.fu-box-right {
+  background: url('../img/cities.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  position: relative;
 }
 
 /* Mosaic */
